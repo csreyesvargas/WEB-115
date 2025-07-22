@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="final.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Task Manager</h1>
+
+        <div class="task-form">
+            <h2>Add New Task</h2>
+
+            <label for="taskName">Task Name:</label>
+            <input type="text" id="taskName" class="form-input text-input" placeholder="Enter here">
+
+            <label for="taskPriority">Priority:</label>
+            <select id="taskPriority" class="form-input select-input">
+                <option value="Low">Low</option>
+                <option value="Medium">Medium</option>
+                <option value="High">High</option>
+            </select>
+
+            <div class="checkboxes">
+                <label>
+                    <input class="inputBox checkbox-input" type="checkbox" id="isImportant">
+                    Important
+                </label>
+
+                <label>
+                    <input class="inputBox checkbox-input" type="checkbox" id="isCompleted">
+                    Completed
+                </label>
+            </div>
+
+            <button id="addTaskBtn">Add Task</button>
+
+        </div>
+
+        <div id="taskmanager">
+
+        </div>
+
+    </div>
+
+    <script src="final.js" defer></script>
+</body>
+
+</html>
